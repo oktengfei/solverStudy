@@ -1,0 +1,24 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
+
+PROJECT(study)
+
+# 定义编译器特性
+SET(CMAKE_CXX_COMPILER "g++")
+SET(CMAKE_C_COMPILER "gcc")
+SET(CMAKE_CXX_STANDARD 14)
+
+# 1. 全局宏定义
+
+
+# 2. 目标文件
+ADD_EXECUTABLE(${PROJECT_NAME} src/main.cpp)
+
+# 3. 添加子目录
+ADD_SUBDIRECTORY(3rdparty)
+# ADD_SUBDIRECTORY(src)
+
+
+# 4. 链接库
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} 
+    3rdparty_lib
+)
