@@ -24,6 +24,8 @@ TARGET_LINK_LIBRARIES(3rdparty_lib INTERFACE
     ${CURRENT_PATH}/qdldl/lib/libqdldl.a
 #   qpOASES
     ${CURRENT_PATH}/qpOASES/lib/libqpOASES.a
+
+    dl
 )
 
 # 4. 指定编译宏，该宏用于防止eigen库异常。
