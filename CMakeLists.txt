@@ -15,7 +15,7 @@ ADD_EXECUTABLE(${PROJECT_NAME} src/main.cpp)
 
 # 3. 添加子目录
 ADD_SUBDIRECTORY(3rdparty)
-# ADD_SUBDIRECTORY(src)
+ADD_SUBDIRECTORY(src)
 
 
 # 4. 链接库
